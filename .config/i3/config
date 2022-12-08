@@ -216,5 +216,6 @@ bindsym $mod+Shift+s gaps inner current minus 5
 
 for_window [class=".*"] border pixel 0
 
+#auto launch key programs
 exec --no-startup-id wal -R
 exec --no-startup-id tilda &
