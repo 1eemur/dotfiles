@@ -120,3 +120,4 @@ source ~/.cache/wal/colors-tty.sh
 
 export DENO_INSTALL="/home/leemur/.deno"
 export PATH="$DENO_INSTALL/bin:$PATH"
+alias config='/usr/bin/git --git-dir=/home/leemur/dotfiles/ --work-tree=/home/leemur'
