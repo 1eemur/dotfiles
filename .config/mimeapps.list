@@ -1,0 +1,20 @@
+[Default Applications]
+video/mp4=mpv.desktop
+x-scheme-handler/pttp=cisco-ptsa.desktop
+application/pdf=org.pwmt.zathura-pdf-mupdf.desktop;
+text/plain=nvim.desktop;
+application/json=nvim.desktop;
+video/x-matroska=mpv.desktop
+video/x-msvideo=mpv.desktop
+application/epub+zip=org.pwmt.zathura.desktop
+inode/directory=nemo.desktop
+image/jpeg=org.gnome.Loupe.desktop
+image/png=org.gnome.Loupe.desktop
+
+[Added Associations]
+video/mp4=mpv.desktop;
+video/x-matroska=mpv.desktop;
+video/x-msvideo=mpv.desktop;
+application/epub+zip=org.pwmt.zathura.desktop;
+image/jpeg=org.gnome.Loupe.desktop;
+image/png=org.gnome.Loupe.desktop;
