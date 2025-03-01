@@ -133,6 +133,8 @@ alias dvm="devour mpv"
 alias p8="ping 8.8.8.8"
 alias lock="i3lock -c 000000"
 alias vencord='sh -c "$(curl -sS https://raw.githubusercontent.com/Vendicated/VencordInstaller/main/install.sh)"'
+alias sleepon='xset s on && xset +dpms'
+alias sleepoff='xset s off && xset -dpms'
 
 function extract {
   if [ -z "$1" ]; then
