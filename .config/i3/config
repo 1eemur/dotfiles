@@ -89,6 +89,7 @@ bindsym $mod+c split h
 bindsym $mod+v split v
 bindsym $mod+f fullscreen toggle
 bindsym $mod+Shift+q kill
+bindsym mod4+l exec --no-startup-id "i3lock -c 000000"
 
 # Change Layout
 bindsym $mod+t layout stacking
