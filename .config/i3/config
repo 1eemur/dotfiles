@@ -41,7 +41,7 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 exec --no-startup-id nm-applet
 exec --no-startup-id wal -i /home/lmr/.config/i3/wallpaper.jpeg
 exec --no-startup-id i3-battery-popup -n -D -L 20 -l 10
-exec --no-startup-id flag st -e ./Documents/Projects/Coding/Scripts/trackpoint.sh
+exec --no-startup-id flag kitty -e ./Documents/Projects/Coding/Scripts/trackpoint.sh
 exec --no-startup-id flag xrdb -merge ~/.Xresources
 exec --no-startup-id /usr/lib/gsd-xsettings
 set $refresh_i3status killall -SIGUSR1 i3status
@@ -56,17 +56,20 @@ bindsym XF86AudioPlay exec playerctl play-pause
 bindsym XF86AudioPause exec playerctl play-pause
 bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previ
-bindsym $mod+n exec --no-startup-id st -e pulsemixer 
+
+bindsym $mod+n exec --no-startup-id kitty -e pulsemixer 
+bindsym $mod+shift+bracketleft exec --no-startup-id "kitty -e /home/lmr/.local/bin/pluma.sh '/home/lmr/Documents/Vimwiki/Estonian Vocab To Add.wiki'"
+bindsym $mod+shift+bracketright exec --no-startup-id "kitty -e /home/lmr/.local/bin/pluma.sh '/home/lmr/Documents/Vimwiki/Scratchpad.wiki'"
 
 # Exec Programs
-bindsym $mod+Return exec --no-startup-id st
+bindsym $mod+Return exec --no-startup-id kitty
 bindsym $mod+d exec --no-startup-id rofi -show drun
 bindsym $mod+shift+d exec --no-startup-id rofi -show drun
 bindsym $mod+w exec --no-startup-id firefox
 bindsym Print exec --no-startup-id "flameshot gui"
 bindsym $mod+e exec --no-startup-id nemo
-bindsym $mod+y exec --no-startup-id st -e nvim -c "VimwikiIndex"
-bindsym $mod+shift+y exec --no-startup-id st -e nvim /home/lmr/Documents/Vimwiki/Scratchpad.wiki
+bindsym $mod+y exec --no-startup-id kitty -e nvim -c "VimwikiIndex"
+bindsym $mod+shift+y exec --no-startup-id kitty -e nvim /home/lmr/Documents/Vimwiki/Scratchpad.wiki
 
 # Change Keyboard Layout
 bindsym $mod+comma exec --no-startup-id setxkbmap -layout us

@@ -121,9 +121,9 @@ alias neof="neofetch --ascii ~/.config/neofetch/lain-solid-col.txt"
 alias myip="curl ipinfo.io/ip"
 alias brc="nvim ~/.bashrc"
 alias zrc="nvim ~/.zshrc"
-alias scr="nvim Documents/Personal/Personal-Notes/Scratch.txt"
 alias fu="flatpak update"
 alias i3conf="nvim ~/.config/i3/config"
+alias swayconf="nvim ~/.config/sway/config"
 alias vim="nvim"
 alias wotd="nvim ~/Documents/Personal/Personal-Notes/Estonian-WOTD-Posts.txt"
 alias nv="nvim"
@@ -131,7 +131,8 @@ alias dv="devour"
 alias dvz="devour zathura"
 alias dvm="devour mpv"
 alias p8="ping 8.8.8.8"
-alias lock="i3lock -c 000000"
+alias i3lock="i3lock -c 000000"
+alias swaylock="swaylock -f -c 000000"
 alias vencord='sh -c "$(curl -sS https://raw.githubusercontent.com/Vendicated/VencordInstaller/main/install.sh)"'
 alias sleepon='xset s on && xset +dpms'
 alias sleepoff='xset s off && xset -dpms'
@@ -164,3 +165,4 @@ function extract {
     fi
   fi
 }
+(cat ~/.cache/wal/sequences &)
