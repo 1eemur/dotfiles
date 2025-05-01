@@ -168,8 +168,15 @@ bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
 # Scratchpad bindings
+# First scratchpad (Cycles through all of the scratchpads)
 bindsym $mod+Shift+minus move scratchpad
 bindsym $mod+minus scratchpad show
+# Second scratchpad using marks (Dedicated single window)
+bindsym $mod+Shift+plus mark "second_scratch", move scratchpad
+bindsym $mod+equal [con_mark="second_scratch"] scratchpad show
+# Third scratchpad using marks (Media player usually)
+bindsym $mod+Shift+bar mark "third_scratch", move scratchpad
+bindsym $mod+backslash [con_mark="third_scratch"] scratchpad show
 
 # Workspaces
 set $ws1 "1"
