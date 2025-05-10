@@ -137,6 +137,8 @@ alias swaylock="swaylock -f -c 000000"
 alias vencord='sh -c "$(curl -sS https://raw.githubusercontent.com/Vendicated/VencordInstaller/main/install.sh)"'
 alias sleepon='xset s on && xset +dpms'
 alias sleepoff='xset s off && xset -dpms'
+alias sleepoff='xset s off && xset -dpms'
+alias wtl='/home/lmr/.local/bin/sol -lat=59.4370 -lon=24.7536'
 
 function extract {
   if [ -z "$1" ]; then
