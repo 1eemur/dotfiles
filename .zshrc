@@ -43,11 +43,14 @@ alias sleepon='xset s on && xset +dpms'
 alias sleepoff='xset s off && xset -dpms'
 alias sleepoff='xset s off && xset -dpms'
 alias wtl='/home/lmr/.local/bin/sol -lat=59.4370 -lon=24.7536'
-alias rtk="rmtk ~/Videos/Books"
+alias rtk="rmtk"
 alias gs="git status"
 alias gc="git commit"
+alias gcm="git commit -m"
 alias gl="git log --pretty=oneline"
 alias gp="git push"
+alias p="python"
+alias p3="python3"
 
 function extract {
   if [ -z "$1" ]; then
