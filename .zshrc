@@ -15,6 +15,7 @@ fi
 #export PATH="/usr/local/bin:$PATH"
 export PATH=$PATH:~/bin
 export PF_INFO="ascii title os kernel host uptime memory de shell palette"
+export PF_ASCII="kiss"
 
 # Aliases
 alias zshconfig="vim ~/.zshrc"
@@ -43,7 +44,6 @@ alias sleepon='xset s on && xset +dpms'
 alias sleepoff='xset s off && xset -dpms'
 alias sleepoff='xset s off && xset -dpms'
 alias wtl='/home/lmr/.local/bin/sol -lat=59.4370 -lon=24.7536'
-alias rtk="rmtk"
 alias gs="git status"
 alias gc="git commit"
 alias gcm="git commit -m"
