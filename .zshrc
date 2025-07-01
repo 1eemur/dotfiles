@@ -1,3 +1,6 @@
+export PATH=$PATH:~/bin
+export PF_INFO="ascii title os kernel host uptime memory de shell palette"
+export PF_ASCII="kiss"
 export PATH="$PATH:$HOME/.local/bin"
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 export ZSH="$HOME/.oh-my-zsh"
@@ -12,11 +15,6 @@ else
     export EDITOR='nvim'
 fi
 
-#export PATH="/usr/local/bin:$PATH"
-export PATH=$PATH:~/bin
-export PF_INFO="ascii title os kernel host uptime memory de shell palette"
-export PF_ASCII="kiss"
-
 # Aliases
 alias zshconfig="vim ~/.zshrc"
 alias ohmyzsh="vim ~/.oh-my-zsh"
@@ -27,7 +25,7 @@ alias neof="neofetch --ascii ~/.config/neofetch/lain-solid-col.txt"
 alias myip="curl ipinfo.io/ip"
 alias brc="nvim ~/.bashrc"
 alias zrc="nvim ~/.zshrc"
-alias fu="flatpak update"
+alias fpu="flatpak update"
 alias i3conf="nvim ~/.config/i3/config"
 alias swayconf="nvim ~/.config/sway/config"
 alias vim="nvim"
@@ -41,7 +39,6 @@ alias i3lock="i3lock -c 000000"
 alias swaylock="swaylock -f -c 000000"
 alias vencord='sh -c "$(curl -sS https://raw.githubusercontent.com/Vendicated/VencordInstaller/main/install.sh)"'
 alias sleepon='xset s on && xset +dpms'
-alias sleepoff='xset s off && xset -dpms'
 alias sleepoff='xset s off && xset -dpms'
 alias wtl='/home/lmr/.local/bin/sol -lat=59.4370 -lon=24.7536'
 alias gs="git status"
@@ -87,6 +84,12 @@ dfi(){
 }
 dfr(){
 	sudo dnf remove "$1"
+}
+fpi(){
+	flatpak install "$1"
+}
+fpr(){
+	flatpak uninstall "$1"
 }
 mkcd (){
 	mkdir -p -- "$1" && cd -P -- "$1"
