@@ -48,6 +48,8 @@ alias gl="git log --pretty=oneline"
 alias gp="git push"
 alias p="python"
 alias p3="python3"
+alias tsu="sudo tailscale up"
+alias tsd="sudo tailscale down"
 
 function extract {
   if [ -z "$1" ]; then
