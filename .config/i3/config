@@ -57,12 +57,12 @@ bindsym XF86AudioPause exec playerctl play-pause
 bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previ
 
-bindsym $mod+n exec --no-startup-id kitty -e pulsemixer 
-bindsym $mod+shift+bracketleft exec --no-startup-id "kitty -e /home/lmr/.local/bin/pluma.sh '/home/lmr/Documents/Vimwiki/Estonian Vocab To Add.wiki'"
-bindsym $mod+shift+bracketright exec --no-startup-id "kitty -e /home/lmr/.local/bin/pluma.sh '/home/lmr/Documents/Vimwiki/Scratchpad.wiki'"
-
 # Exec Programs
 bindsym $mod+Return exec --no-startup-id kitty
+bindsym $mod+n exec --no-startup-id kitty -e pulsemixer 
+bindsym $mod+Shift+bracketleft exec --no-startup-id "/home/lmr/.local/bin/pluma.sh '/home/lmr/Documents/Vimwiki/Estonian Vocab To Add.wiki'"
+bindsym $mod+Shift+bracketright exec --no-startup-id "/home/lmr/.local/bin/pluma.sh '/home/lmr/Documents/Vimwiki/Scratchpad.wiki'"
+
 # Launch floating terminal with $mod+Shift+Return
 bindsym $mod+Shift+Return exec --no-startup-id kitty --class="floating_term"
 for_window [class="floating_term"] floating enable, resize set 800 600, move position center
@@ -74,7 +74,7 @@ bindsym $mod+e exec --no-startup-id nemo
 bindsym $mod+y exec --no-startup-id kitty -e nvim -c "VimwikiIndex"
 bindsym $mod+shift+y exec --no-startup-id kitty -e nvim /home/lmr/Documents/Vimwiki/Scratchpad.wiki
 
-bindsym $mod+shift+t exec --no-startup-id kitty -e taskwarrior-tui
+bindsym $mod+shift+t exec --no-startup-id kitty -e nf
 
 # Change Keyboard Layout
 bindsym $mod+comma exec --no-startup-id setxkbmap -layout us
