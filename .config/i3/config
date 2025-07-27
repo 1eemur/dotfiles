@@ -74,7 +74,7 @@ bindsym $mod+e exec --no-startup-id nemo
 bindsym $mod+y exec --no-startup-id kitty -e nvim -c "VimwikiIndex"
 bindsym $mod+shift+y exec --no-startup-id kitty -e nvim /home/lmr/Documents/Vimwiki/Scratchpad.wiki
 
-bindsym $mod+shift+t exec --no-startup-id kitty -e nf
+bindsym $mod+shift+t exec --no-startup-id st -e nf
 bindsym $mod+shift+g exec --no-startup-id thunderbird
 
 # Change Keyboard Layout
