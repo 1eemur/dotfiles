@@ -19,7 +19,7 @@ fi
 alias zshconfig="vim ~/.zshrc"
 alias ohmyzsh="vim ~/.oh-my-zsh"
 alias ll="ls -la"
-alias dfu="sudo dnf -y update && sudo dnf upgrade"
+alias dfu="sudo dnf -y update"
 alias pf="pfetch"
 alias neof="neofetch --ascii ~/.config/neofetch/lain-solid-col.txt"
 alias myip="curl ipinfo.io/ip"
