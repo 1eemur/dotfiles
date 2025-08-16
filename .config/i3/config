@@ -78,9 +78,9 @@ bindsym $mod+shift+t exec --no-startup-id st -e nf
 bindsym $mod+shift+g exec --no-startup-id thunderbird
 
 # Change Keyboard Layout
-bindsym $mod+comma exec --no-startup-id setxkbmap -layout us
-bindsym $mod+period exec --no-startup-id setxkbmap -layout ee
-bindsym $mod+question exec --no-startup-id setxkbmap -layout es
+bindsym $mod+ctrl+z exec --no-startup-id setxkbmap -layout us
+bindsym $mod+ctrl+x exec --no-startup-id setxkbmap -layout ee
+bindsym $mod+ctrl+c exec --no-startup-id setxkbmap -layout es
 
 # Manage Window Focus
 bindsym $mod+h focus left
