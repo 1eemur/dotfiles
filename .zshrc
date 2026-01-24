@@ -16,6 +16,7 @@ else
 fi
 
 # Aliases
+alias darfor="sudo"
 alias zshconfig="vim ~/.zshrc"
 alias ohmyzsh="vim ~/.oh-my-zsh"
 alias ll="ls -la"
@@ -97,6 +98,6 @@ mkcd (){
 	mkdir -p -- "$1" && cd -P -- "$1"
 }
 wotd (){
-    python3 /home/lmr/Documents/Projects/Coding/Genekas/genekas.py "$1"
+    python3 /home/lmr/Documents/Projects/Coding/genekas/genekas.py "$1"
 }
 
