@@ -51,6 +51,7 @@ alias p="python"
 alias p3="python3"
 alias tsu="sudo tailscale up"
 alias tsd="sudo tailscale down"
+alias xkill='kill $(xprop _NET_WM_PID | awk "{print \$3}")'
 
 function extract {
   if [ -z "$1" ]; then
