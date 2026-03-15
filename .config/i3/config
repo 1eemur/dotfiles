@@ -70,6 +70,7 @@ bindsym $mod+d exec --no-startup-id rofi -show drun
 bindsym $mod+shift+d exec --no-startup-id rofi -show drun
 bindsym $mod+w exec --no-startup-id librewolf
 bindsym Print exec --no-startup-id "flameshot gui"
+bindsym $mod+z exec --no-startup-id "flameshot gui"
 bindsym $mod+e exec --no-startup-id nemo
 bindsym $mod+y exec --no-startup-id kitty -e nvim -c "VimwikiIndex"
 bindsym $mod+shift+y exec --no-startup-id kitty -e nvim /home/lmr/Documents/Vimwiki/Scratchpad.wiki
@@ -107,8 +108,8 @@ bindsym $mod+s layout toggle split
 bindsym $mod+Shift+space floating toggle
 
 # Adjust Gaps
-bindsym $mod+z gaps inner current plus 5
-bindsym $mod+Shift+z gaps inner current minus 5
+bindsym $mod+x gaps inner current plus 5
+bindsym $mod+Shift+x gaps inner current minus 5
 
 # Restart/Refresh/Exit i3
 bindsym $mod+Shift+a reload
