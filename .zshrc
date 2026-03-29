@@ -22,7 +22,6 @@ alias ohmyzsh="vim ~/.oh-my-zsh"
 alias ll="ls -la"
 alias dfu="sudo dnf -y update"
 alias pf="pfetch"
-alias neof="neofetch --ascii ~/.config/neofetch/lain-solid-col.txt"
 alias myip="curl ipinfo.io/ip"
 alias brc="nvim ~/.bashrc"
 alias zrc="nvim ~/.zshrc"
@@ -52,6 +51,7 @@ alias p3="python3"
 alias tsu="sudo tailscale up"
 alias tsd="sudo tailscale down"
 alias xkill='kill $(xprop _NET_WM_PID | awk "{print \$3}")'
+alias upd="sudo dnf update -y && sudo dnf upgrade -y && omz update --unattended && flatpak update -y"
 
 function extract {
   if [ -z "$1" ]; then
