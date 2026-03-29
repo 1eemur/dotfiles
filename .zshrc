@@ -51,7 +51,7 @@ alias p3="python3"
 alias tsu="sudo tailscale up"
 alias tsd="sudo tailscale down"
 alias xkill='kill $(xprop _NET_WM_PID | awk "{print \$3}")'
-alias upd="sudo dnf update -y && sudo dnf upgrade -y && omz update --unattended && flatpak update -y"
+alias upd="sudo dnf update -y && ZSH_DISABLE_COMPFIX=true bash $ZSH/tools/upgrade.sh && flatpak update -y"
 
 function extract {
   if [ -z "$1" ]; then
