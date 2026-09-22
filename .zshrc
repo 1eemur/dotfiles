@@ -37,7 +37,7 @@ alias p8="ping 8.8.8.8"
 alias myip="curl ipinfo.io/ip"
 alias i3lock="i3lock -c 000000"
 alias swaylock="swaylock -f -c 000000"
-alias vencord='sh -c "$(curl -sS https://raw.githubusercontent.com/Vendicated/VencordInstaller/main/install.sh)"'
+alias vencord='sh -c "$(curl -sS https://vencord.dev/install.sh)"'
 alias sleepon='xset s on && xset +dpms'
 alias sleepoff='xset s off && xset -dpms'
 alias wtl='/home/lmr/.local/bin/sol -lat=59.4370 -lon=24.7536'
