@@ -35,6 +35,7 @@ font pango:monospace 8
 for_window [class="^.*"] border pixel 2
 hide_edge_borders both
 exec_always --no-startup-id picom  -b --config ~/.config/picom/picom.conf
+exec_always --no-startup-id xremap ~/.config/xremap/config.yml
 floating_modifier $mod
 exec --no-startup-id dex-autostart --autostart --environment i3
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
@@ -69,8 +70,6 @@ for_window [class="floating_term"] floating enable, resize set 800 600, move pos
 bindsym $mod+d exec --no-startup-id rofi -show drun
 bindsym $mod+shift+d exec --no-startup-id rofi -show drun
 bindsym $mod+w exec --no-startup-id librewolf
-bindsym Print exec --no-startup-id "flameshot gui"
-bindsym $mod+z exec --no-startup-id "flameshot gui"
 bindsym $mod+e exec --no-startup-id nemo
 bindsym $mod+y exec --no-startup-id kitty -e nvim -c "VimwikiIndex"
 bindsym $mod+shift+y exec --no-startup-id kitty -e nvim /home/lmr/Documents/Vimwiki/Scratchpad.wiki
@@ -218,3 +217,5 @@ bindsym $mod+Shift+9 move container to workspace number $ws9
 bindsym $mod+Shift+0 move container to workspace number $ws10
 bindsym $mod+Tab workspace next
 bindsym $mod+Shift+Tab workspace prev
+
+bindsym --release $mod+z exec --no-startup-id ksnip -r
