@@ -1,0 +1,34 @@
+virtual_modifiers:
+  - CapsLock
+
+keymap:
+  - name: "Caps Lock Layer"
+    remap:
+      CapsLock-j: Left
+      CapsLock-k: Down
+      CapsLock-i: Up
+      CapsLock-l: Right
+      CapsLock-n: End
+      CapsLock-u: PageUp
+      CapsLock-o: PageDown
+      CapsLock-q: Mute
+      CapsLock-w: VolumeDown
+      CapsLock-e: VolumeUp
+      CapsLock-grave: Esc
+      CapsLock-BackSpace: Delete
+      CapsLock-semicolon: End
+      CapsLock-p: Print
+      CapsLock-m: C-m
+      CapsLock-1: F1
+      CapsLock-2: F2
+      CapsLock-3: F3
+      CapsLock-4: F4
+      CapsLock-5: F5
+      CapsLock-6: F6
+      CapsLock-7: F7
+      CapsLock-8: F8
+      CapsLock-9: F9
+      CapsLock-0: F10
+      CapsLock-minus: F11
+      CapsLock-equal: F12
+      CapsLock-y: C-Alt-t
